@@ -16,6 +16,13 @@ We recommend trying BEAMinject first, and if you have issues, you can move to th
 ## :inbox_tray: Downloads
 You can download the latest nightly release [here](https://nightly.link/OpenM-Project/BEAMinject/workflows/build/main?preview).
 
+## :rotating_light: About AV detections
+Some poorly designed AVs *(namely Microsoft, Avast and AVG)* might detect our packed Python executables as a trojan.
+
+There is [**nothing we can do about this**](https://github.com/pyinstaller/pyinstaller/issues/6754#issuecomment-1100821249) except sign the binaries, which is [***really* expensive**](https://codesigncert.com/blog/code-signing-certificate-cost).
+
+Since the code is open and all builds are distributed via GitHub Actions, you can confirm that the executable is safe and whitelist it in your AV software!
+
 ## :test_tube: ARM support
 As of version 0.3.0, BEAMinject supports Windows on ARM!
 
@@ -29,13 +36,6 @@ For ARMv7 *(aka ARM32)*, you need to have a Python runtime and then install depe
 pip install -r requirements.txt
 py app.py
 ```
-
-## :rotating_light: About AV detections
-Some poorly designed AVs *(namely Microsoft, Avast and AVG)* might detect our packed Python executables as a trojan.
-
-There is [**nothing we can do about this**](https://github.com/pyinstaller/pyinstaller/issues/6754#issuecomment-1100821249) except sign the binaries, which is [***really* expensive**](https://codesigncert.com/blog/code-signing-certificate-cost).
-
-Since the code is open and all builds are distributed via GitHub Actions, you can confirm that the executable is safe and whitelist it in your AV software!
 
 ## :computer: Support
 This only works on Windows,
