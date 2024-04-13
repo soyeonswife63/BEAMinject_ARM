@@ -4,6 +4,18 @@
 
 -----
 
+## :wrench: Versions
+BEAMinject comes in 2 versions:
+- **BEAMinject:** Used for silently launching Minecraft then exiting
+    - Recommended for most users
+- **BEAMinject_GUI:** GUI version, mostly used for debugging etc.
+    - Includes toggles for launching Minecraft, displays injection logs
+
+We recommend trying BEAMinject first, and if you have issues, you can move to the GUI version for debugging.
+
+## :inbox_tray: Downloads
+You can download the latest nightly release [here](https://nightly.link/OpenM-Project/BEAMinject/workflows/build/main?preview).
+
 ## :test_tube: ARM support
 As of version 0.3.0, BEAMinject supports Windows on ARM!
 
@@ -17,18 +29,6 @@ For ARMv7 *(aka ARM32)*, you need to have a Python runtime and then install depe
 pip install -r requirements.txt
 py app.py
 ```
-
-## :wrench: Versions
-BEAMinject comes in 2 versions:
-- **BEAMinject:** Used for silently launching Minecraft then exiting
-    - Recommended for most users
-- **BEAMinject_GUI:** GUI version, mostly used for debugging etc.
-    - Includes toggles for launching Minecraft, displays injection logs
-
-We recommend trying BEAMinject first, and if you have issues, you can move to the GUI version for debugging.
-
-## :inbox_tray: Downloads
-You can download the latest nightly release [here](https://nightly.link/OpenM-Project/BEAMinject/workflows/build/main?preview).
 
 ## :rotating_light: About AV detections
 Some poorly designed AVs *(namely Microsoft, Avast and AVG)* might detect our packed Python executables as a trojan.
